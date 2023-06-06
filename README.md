@@ -4,7 +4,7 @@ Learn PHP & MySQL
 https://www.w3schools.com/php/php_mysql_intro.asp
 
 Youtube Tutorial   
-https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNpT-yVAYxNWOmxjxL51Hy
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o
 
 Access your codes in browser by typing:   
 `http://localhost/folder_name`   
