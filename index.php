@@ -9,7 +9,7 @@ require_once('header.php');
             <?php
             // echo "home";
 
-            $sql = "SELECT * FROM products";
+            $sql = "SELECT * FROM products ORDER BY price ASC";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
