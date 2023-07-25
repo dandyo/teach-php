@@ -2,6 +2,15 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+session_start();
+//initialize cart if not set or is unset
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+
+//unset quantity
+// unset($_SESSION['qty_array']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,7 +18,7 @@ error_reporting(E_ALL);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
+    <title>Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -48,7 +57,7 @@ error_reporting(E_ALL);
                     </form>
                     <ul class="navbar-nav ms-auto pe-1">
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html"><i class="bi bi-bag"></i> 3</a>
+                            <a class="nav-link" href="cart.php"><i class="bi bi-bag"></i> <?php echo count($_SESSION['cart']) ?></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>

@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 require_once('../db.php');
 require_once('header.php');
-
+	
 $id= $_GET['id'];
 
 $name = $description = $price = $size = "";

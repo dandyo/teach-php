@@ -1,6 +1,7 @@
 <?php
 require_once('db.php');
 require_once('header.php');
+require_once('banner.php');
 ?>
 
 <section class="py-5">
@@ -18,7 +19,7 @@ require_once('header.php');
                     <!-- echo "<h3>" . $row["name"] . "</h3>"; -->
                     <div class="col-6 col-md-4 col-lg-3">
                         <a class="product" href="product.php?id=<?php echo $row['id']; ?>">
-                            <img src="/images/products/<?php echo $row['image'] ?>" alt="<?php $row['name']; ?>">
+                            <img src="images/products/<?php echo $row['image'] ?>" alt="<?php $row['name']; ?>">
 
                             <div class="d-flex justify-content-between">
                                 <h3><?php echo $row['name']; ?></h3>
